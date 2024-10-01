@@ -1,0 +1,31 @@
+import { withUt } from "uploadthing/tw";
+
+export default withUt({
+  // Your existing Tailwind config
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        accent: "#0989FF",
+        topHeadingPrimary: "#010f1c",
+        topHeadingSecondary: "#021d35",
+        pink: "#FD4B6B",
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "15px",
+          sm: "0.5rem",
+          md: "1rem",
+          lg: "2rem",
+          xl: "5rem",
+        },
+      },
+    },
+  },
+  plugins: [],
+});
